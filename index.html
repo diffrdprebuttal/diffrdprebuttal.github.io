@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebuttal Figures</title>
+    <style>
+        /* Basic CSS for styling the page and the figures */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex; /* Use flexbox for layout */
+            flex-direction: column; /* Stack items (figures) vertically */
+            align-items: center; /* Center items horizontally within the body */
+            justify-content: center; /* Center items vertically if there's extra space */
+            min-height: 100vh; /* Ensure body takes at least the full viewport height */
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px; /* Add some padding around the content */
+            box-sizing: border-box; /* Include padding in element's total width and height */
+        }
+
+        figure {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            margin: 20px 0; /* Add vertical margin for spacing between figures, no horizontal margin needed due to `align-items: center` on body */
+            max-width: 500px; /* Limit the maximum width of each figure */
+            width: 100%; /* Allow figure to take full width up to max-width */
+            text-align: center; /* Center the image and caption within the figure */
+            overflow: hidden; /* Ensure nothing spills out of the rounded corners */
+        }
+
+        figure img {
+            max-width: 100%; /* Make the image responsive, scaling down if needed */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 4px; /* Slightly rounded corners for the image */
+            display: block; /* Remove extra space below the image */
+            margin: 0 auto 15px auto; /* Center image and add space below it */
+        }
+
+        figcaption {
+            font-style: italic;
+            color: #555;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            figure {
+                margin: 15px 0; /* Slightly less vertical margin on smaller screens */
+                padding: 10px;
+            }
+            figcaption {
+                font-size: 0.85em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <figure>
+        <!-- The <img> tag displays the image.
+             The 'src' attribute points to the image source.
+             I'm using a placeholder image from 'picsum.photos' which generates random images.
+             The 'alt' attribute provides alternative text for screen readers and when the image fails to load. -->
+        <img src="./Figs/MixtureGaussianFig.jpg" alt="MixtureGaussianFig.jpg">
+        
+        <!-- The <figcaption> tag provides a caption or legend for the figure. -->
+        <figcaption>Figure R1: Sampling trajectories of ODE on mixture Gaussian source.</figcaption>
+    </figure>
+
+    <figure>
+        <!-- The <img> tag displays the image.
+             The 'src' attribute points to the image source.
+             I'm using a placeholder image from 'picsum.photos' which generates random images.
+             The 'alt' attribute provides alternative text for screen readers and when the image fails to load. -->
+        <img src="./Figs/more_benchmark.jpg" alt="more_benchmark.jpg">
+        
+        <!-- The <figcaption> tag provides a caption or legend for the figure. -->
+        <figcaption>Figure R2: Updated RDP figure with more benchmark and labeled bpp values.</figcaption>
+    </figure>
+
+
+    <figure>
+        <!-- The <img> tag displays the image.
+             The 'src' attribute points to the image source.
+             I'm using a placeholder image from 'picsum.photos' which generates random images.
+             The 'alt' attribute provides alternative text for screen readers and when the image fails to load. -->
+        <img src="./Figs/table_kodak_div2k.jpg" alt="table_kodak_div2k.jpg">
+        
+        <!-- The <figcaption> tag provides a caption or legend for the figure. -->
+        <figcaption>Figure R3: Table comparing Kodak and DIV2K datasets for same $\rho$ and $t$.</figcaption>
+    </figure>
+
+</body>
+</html>
